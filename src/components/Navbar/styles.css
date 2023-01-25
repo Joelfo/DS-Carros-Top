@@ -1,0 +1,49 @@
+.navbar {
+    background-color: #F78B00;
+    min-height: 70px;
+}
+
+
+
+.main-menu a {
+    color: #00285F;
+}
+
+.main-menu a.active {
+    font-weight: 700;
+}
+
+.main-menu button{
+    border: 0px;
+}
+
+.main-menu h4 {
+    font-size: 24px;
+}
+
+
+.main-menu ul {
+    width: 170px;  
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-menu ul a {
+    font-size: 18px;
+    
+}
+
+
+.main-menu button:focus,
+.main-menu button:active,
+.hamburguer-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+@media(min-width: 768px){
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+}
