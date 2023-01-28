@@ -2,14 +2,15 @@ import "./styles.css";
 import "@popperjs/core";
 import "bootstrap/js/src/collapse";
 import { ReactComponent as HamburguerMenuImg } from "assets/images/hamburguer-menu.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-md main-menu">
       <div className="container-fluid items-container">
-        <a className="navbar-brand menu-title" href="navbar">
+        <Link className="navbar-brand menu-title" to="/">
           <h4>Carros Top</h4>
-        </a>
+        </Link>
 
         <button
           className="navbar-toggler"
@@ -29,18 +30,18 @@ const Navbar = () => {
         >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a
+              <Link
                 className="nav-link menu-option active"
                 aria-current="page"
-                href="Home"
+                to="/"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link menu-option" href="catalog">
+              <Link className="nav-link menu-option" to="/catalog">
                 Catálogo
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
